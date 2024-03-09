@@ -2,7 +2,6 @@ Le sujet de recherche ci-joint est à la base une présentation PowerPoint qui d
 
 Je ne partage pas le code final qui concerne Dijkstra dans le cas d'un graphe dynamique, optimisé par la descente de gradient ou par un algorithme génétique, mais je partage ces indications :
 
-D'accord, voici les corrections avec les fautes corrigées :
 
 - Il faut choisir un modèle convenable dans le cas réel pour approcher la loi de probabilité suivie par la variable aléatoire qui décrit la pondération dynamique. Dans mon sujet, je choisis, à titre de simplification, de choisir une fonction affine.
   
