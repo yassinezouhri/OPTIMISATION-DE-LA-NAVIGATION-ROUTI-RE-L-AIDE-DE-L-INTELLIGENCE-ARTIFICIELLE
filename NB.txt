@@ -1,0 +1,18 @@
+Le sujet de recherche ci-joint est à la base une présentation PowerPoint qui devait être présentée en 15 minutes puis discutée avec le jury en 15 minutes, donc elle ne comporte que les grands points de la recherche.
+
+Je ne partage pas le code final qui concerne Dijkstra dans le cas d'un graphe dynamique, optimisé par la descente de gradient ou par un algorithme génétique, mais je partage ces indications :
+
+D'accord, voici les corrections avec les fautes corrigées :
+
+- Il faut choisir un modèle convenable dans le cas réel pour approcher la loi de probabilité suivie par la variable aléatoire qui décrit la pondération dynamique. Dans mon sujet, je choisis, à titre de simplification, de choisir une fonction affine.
+  
+- L'algorithme génétique doit être utilisé pour déterminer les meilleures valeurs des facteurs αprofil, β(i,j,t), γ(i,j,t) et δ(i,j,t) en effectuant des croisements entre eux, et ensuite les injecter dans l'algorithme de Dijkstra sous la forme α(i,j,t) = min(1, αprofil × (w1 × β(i,j,t) + w2 × γ(i,j,t) + w3 × δ(i,j,t))), afin de déterminer le facteur d'optimisme α(i,j,t) le plus sain dans la situation donnée.
+  
+- L'algorithme de Dijkstra fonctionnera en trois temps :
+  * Détermination de α(i,j,t) le plus convenable.
+  ** Approximation de la loi suivie par la pondération avec la descente de gradient, ou bien on choisit cette loi directement, une loi équiprobable par exemple (exemple de loi équiprobable : p(i,j,t) = 𝑎ⅈ𝑗𝑡 + (𝑏𝑖𝑗𝑡 − 𝑎ⅈ𝑗𝑡)α(i,j,t)).
+  *** Calcul du plus court chemin de la même manière que dans Dijkstra classique.
+
+
+
+NB: J'ai perdu le PowerPoint final, le PDF est plein de fautes d'orthographe. Soyez vigilants en cas d'utilisation de ce sujet, surtout dans la dernière partie d'optimisation, car ce sont des idées personnelles non validées par un expert et non testées dans un cas réel.
