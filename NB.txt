@@ -3,7 +3,7 @@ Le sujet de recherche ci-joint est à la base une présentation PowerPoint qui d
 Je ne partage pas le code final qui concerne Dijkstra dans le cas d'un graphe dynamique, optimisé par la descente de gradient ou par un algorithme génétique, mais je partage ces indications :
 
 
-- Il faut choisir un modèle convenable dans le cas réel pour approcher la loi de probabilité suivie par la variable aléatoire qui décrit la pondération dynamique. Dans mon sujet, je choisis, à titre de simplification, de choisir une fonction affine.
+- Il faut choisir un modèle convenable dans le cas réel pour approcher la loi de probabilité suivie par la variable aléatoire qui décrit la pondération dynamique. Dans mon sujet, je choisis, à titre de simplification, une fonction affine.
   
 - L'algorithme génétique doit être utilisé pour déterminer les meilleures valeurs des facteurs αprofil, β(i,j,t), γ(i,j,t) et δ(i,j,t) en effectuant des croisements entre eux, et ensuite les injecter dans l'algorithme de Dijkstra sous la forme α(i,j,t) = min(1, αprofil × (w1 × β(i,j,t) + w2 × γ(i,j,t) + w3 × δ(i,j,t))), afin de déterminer le facteur d'optimisme α(i,j,t) le plus sain dans la situation donnée.
   
